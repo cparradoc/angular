@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-son-component',
   templateUrl: './son-component.component.html',
   styleUrls: ['./son-component.component.scss']
 })
-export class SonComponentComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class SonComponentComponent {
+  // Recibe inputText desde la template del padre
+  @Input() inputText: string | undefined;
 }

@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './father-component.component.html',
   styleUrls: ['./father-component.component.scss']
 })
-export class FatherComponentComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class FatherComponentComponent {
+  //declaramos nuestra variable
+  inputText: string = '';
+  
+  // Función cada vez que pulsamos una tecla.
+  keyUp(letra: string) {
+    this.inputText = letra;
   }
-
 }
