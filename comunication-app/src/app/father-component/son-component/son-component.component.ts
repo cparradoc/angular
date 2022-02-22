@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-son-component',
@@ -8,4 +8,12 @@ import { Component, Input } from '@angular/core';
 export class SonComponentComponent {
   // Recibe inputText desde la template del padre
   @Input() inputText: string | undefined;
+
+  @Output() emitMessage = new EventEmitter<string>();
+
+  message: string = '';
+
+  sendMessage() {
+    this.emitMessage.emit(this.message);
+  }
 }
