@@ -1,6 +1,4 @@
-<p>father-component works!</p>
-<app-son-component></app-son-component>
-
+<
 <div>
     <h1>Father Component</h1>
     <!-- Input sobre el que escribimos y la función declarada en el .ts -->
@@ -8,6 +6,10 @@
     <div>
       <!-- pasamos al hijo el valor de la variable inputText -->
       <!-- El valor de la izquierda es el que recibe -->
-      <app-son-component [inputText]="inputText"></app-son-component>
+      <app-son-component [inputText]="inputText"
+      (emitMessage)="setMessage($event)"
+      ></app-son-component>
+      <h1>Mensaje de mi hijo ⬇️</h1>
+      <p>{{ sonMessage }}</p>
     </div>
-  </div>
+</div>

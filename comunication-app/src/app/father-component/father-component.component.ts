@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-father-component',
@@ -8,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class FatherComponentComponent {
   //declaramos nuestra variable
   inputText: string = '';
+  // Variable donde almacenamos el valor del hijo
+  sonMessage: string = '';
   
   // Función cada vez que pulsamos una tecla.
   keyUp(letra: string) {
     this.inputText = letra;
+  }
+  // Recibe el mensaje del hijo  
+  setMessage(message: string): void {
+    this.sonMessage = message;
   }
 }
