@@ -1,0 +1,9 @@
+.web p {
+  border-style: dashed;
+  border-color: orange;
+  border-radius: 10px;
+  border-collapse: separate;
+  padding: 20px;
+  border-width: 2px;
+}
+/*# sourceMappingURL=pokemon-home-webinfo.component.css.map */

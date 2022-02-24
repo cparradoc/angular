@@ -1,5 +1,22 @@
 {
+    "header": {
+        "list": "List"
+    },
     "home": {
-        "title": "Pokédex main page"
+        "title": "Pokédex main page",
+        "info": {
+            "title": "What are Pokémon?",
+            "first": "Pokémon (an abbreviation for Pocket Monsters in Japan) is a Japanese media franchise managed by The Pokémon Company, a company founded by Nintendo, Game Freak, and Creatures.",
+            "second": "Pokémon are a kind of creatures inspired by real animals, insects, objects, plants, or mythological creatures. Players take on the role of Pokémon Trainers and have three overarching goals: complete the Pokédex by collecting all available Pokémon species found, train a team of powerful Pokémon from those they have caught to compete against other trainers. The ultimate goal of the game is to win the Pokémon League and become the regional champion. The themes of collecting, training, and battling are present in almost every version of the Pokémon franchise, including the video games, the anime and manga series, and the Pokémon Trading Card Game.",
+            "third": "Users of video games are called Pokémon Trainer. Their goal is to fulfill two objectives (in most Pokémon games): capture all the Pokémon species available in the fictional region where the game is set, and thus complete the information of all the Pokémon in the Pokédex; on the other hand, they must train them and face other pokémon belonging to other trainers to demonstrate their skills, strength, talent and thus become a Pokémon Master. To accomplish this, Pokémon Trainers travel far and wide throughout the regions of the Pokémon world, collecting Gym Badges, which are earned by defeating their respective Gym Leaders, in a battle in which both the Trainer and the Gym Leader pit their pokémon against each other to test their special abilities in a pokémon battle."
+        },
+        "web": {
+            "title": "What can you finde here?",
+            "first": "This web page is used exclusively for the study of Pokémon, its data being extracted via API.",
+            "second": "There are two types of Pokémon list."
+        }
+    },
+    "footer": {
+        "about-us": "About us"
     }
 }
