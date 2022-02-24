@@ -1,5 +1,11 @@
 {
     "home": {
-        "title": "Página principal de la Pokédex"
+        "title": "Página principal de la Pokédex",
+        "info": {
+            "first": "La palabra Pokémon es la contracción romanizada de la marca japonesa Pocket Monsters (ポケットモンスター Poketto Monsutā?, literalmente 'monstruos de bolsillo'), como tales contracciones son muy comunes en Japón.",
+            "second": "Los Pokémon son una clase de criaturas inspiradas en animales reales, insectos, objetos, plantas o criaturas mitológicas. Los jugadores toman el papel Entrenadores Pokémon y tienen tres objetivos generales: completar la Pokédex mediante la recopilación de todas las especies de Pokémon disponibles que se encuentran, entrenar un equipo de Pokémon poderosos de aquellos que han atrapado para competir contra otros entrenadores. El objetivo final del juego es llegar a ganar la Liga Pokémon y convertirse en el campeón regional. La temática de coleccionar, entrenar y luchar están presentes en casi todas las versiones de la franquicia Pokémon, incluidos los videojuegos, las series de anime y manga, y el juego de cartas coleccionables Pokémon.",
+            "third": "A los usuarios de los videojuegos se los denomina Entrenador Pokémon. Tienen como meta cumplir dos objetivos (en la mayoría de los juegos de Pokémon): capturar a todas las especies de pokémon disponibles en la región ficticia en donde se encuentra ambientado el juego, y completar así la información de todos los pokémon en el Pokédex; por otro lado, deben entrenarlos y enfrentarlos a otros pokémon pertenecientes a otros entrenadores para demostrar sus habilidades, fortaleza, talento y así convertirse en un Maestro Pokémon. Para lograrlo, los entrenadores pokémon viajan a lo largo y ancho de las regiones del mundo Pokémon, recolectando medallas de gimnasio, que se obtienen tras derrotar a los respectivos líderes de gimnasio, en una batalla en la que tanto el entrenador como el líder de gimnasio enfrentan a sus pokémon para probar sus habilidades especiales en una batalla Pokémon."
+        },
+        "web": {}
     }
 }

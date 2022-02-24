@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,KADC,CACC,CAAC,CAAC;EACA,YAAY,EAAE,MAAM;EACpB,YAAY,EAAE,MAAM;EACpB,aAAa,EAAE,IAAI;EACnB,eAAe,EAAE,QAAQ;EACzB,OAAO,EAAE,IAAI;EACb,YAAY,EAAE,GAAG;CACpB",
+    "sources": [
+        "pokemon-home-info.component.scss"
+    ],
+    "names": [],
+    "file": "pokemon-home-info.component.css"
+}

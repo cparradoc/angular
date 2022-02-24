@@ -1,0 +1,10 @@
+.info {
+    & p {
+        border-style: dashed;
+        border-color: orange;
+        border-radius: 10px;
+        border-collapse: separate;
+        padding: 20px;
+        border-width: 2px;
+    }
+}
