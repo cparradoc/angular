@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AACI,UADM,CACJ,EAAE,CAAC;EACD,UAAU,EAAE,MAAM;CACrB",
     "sources": [
         "pokemon-home.component.scss"
     ],
