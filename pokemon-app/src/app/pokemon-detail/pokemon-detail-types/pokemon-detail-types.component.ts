@@ -6,9 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./pokemon-detail-types.component.scss']
 })
 export class PokemonDetailTypesComponent {
-
-  constructor() { }
-
   @Input('pokemonParent') pokemon;
-
 }

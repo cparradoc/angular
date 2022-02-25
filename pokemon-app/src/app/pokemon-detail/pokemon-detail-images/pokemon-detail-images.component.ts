@@ -6,8 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./pokemon-detail-images.component.scss']
 })
 export class PokemonDetailImagesComponent{
-
-  constructor() { }
-
   @Input('pokemonParent') pokemon;
 }
