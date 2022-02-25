@@ -11,6 +11,8 @@ export class PokemonListComponent implements OnInit {
 
   PokemonResponseInterface: PokemonResponseInterface; //resultado
   pokemonList: PokemonInterface[] = [];
+  pokemonFilteredList: PokemonInterface[] = []; //lista filtrada
+  filter: string;
   baseURL: string = 'https://pokeapi.co/api/v2/pokemon/?limit=';
   limit: number = 151; //primera generacion
 
@@ -31,13 +33,20 @@ export class PokemonListComponent implements OnInit {
         }))
       }
       this.pokemonList = pokemon;
-      console.log(this.pokemonList);
+      this.pokemonFilteredList = this.pokemonList;
     });
   }
 
   ngOnInit(): void {
     callRequestService(this.baseURL+'25');
   }
+
+  onChangeFilter(filter: string) {
+    const newList: PokemonInterface[] = this.pokemonList.filter(
+      pokemon => pokemon.name.toLowerCase().includes(filter.trim().toLowerCase()));
+    this.pokemonFilteredList = newList;
+  }
+
 }
 
 function callRequestService(url: string) {
