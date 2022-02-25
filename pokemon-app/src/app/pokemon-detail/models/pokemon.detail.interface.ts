@@ -1,4 +1,4 @@
-export interface Pokemon {
+export interface PokemonDetailInterface {
     id: string;
     name: string;
     frontImage: string;
