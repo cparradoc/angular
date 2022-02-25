@@ -40,7 +40,7 @@ export class PokemonListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    callRequestService(this, this.baseURL+'25');
+    callRequestService(this, this.baseURL+'35'); //aparecn los 25 primeros al iniciarse la lista
   }
 
   onChangeFilter(filter: string) {
