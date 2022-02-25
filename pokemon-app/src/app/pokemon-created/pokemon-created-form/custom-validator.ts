@@ -19,21 +19,3 @@ export function compareType (controlName: string, matchingControlName: string){
     }
   };
 }
-
-export function compareId (controlName: number, matchingControlName: number){
-    return (formGroup: FormGroup) => {
-      // Asignamos dos controladores a nuestros valores por param
-      const control = formGroup.controls[controlName];
-      const matchingControl = formGroup.controls[matchingControlName];
-      //  Control de errores
-      if (matchingControl.errors && !matchingControl.errors['mustMatch']) {
-        return;
-      }
-      // Setter Errores
-      if (control.value !== matchingControl.value) {
-        matchingControl.setErrors({ mismatch: true });
-      } else {
-        matchingControl.setErrors(null);
-      }
-    };
-  }
