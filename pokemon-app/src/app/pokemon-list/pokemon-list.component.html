@@ -5,12 +5,18 @@
     <div *ngIf="filter">
       <div *ngIf="pokemonFilteredList">
         <h1>Lista de Pokémon</h1>
+        <div *ngFor="let pokemon of pokemonFilteredList">
+          <app-pokemon-listed [pokemonParent]="pokemon"></app-pokemon-listed>
+        </div>
       </div>
     </div>
 
     <div *ngIf="!filter">
       <div *ngIf="PokemonResponseInterface.results">
         <h1>Lista de Pokémon</h1>
+        <div *ngFor="let pokemon of PokemonResponseInterface.results">
+          <app-pokemon-listed [pokemonParent]="pokemon"></app-pokemon-listed>
+        </div>
       </div>
     </div>
   </div>

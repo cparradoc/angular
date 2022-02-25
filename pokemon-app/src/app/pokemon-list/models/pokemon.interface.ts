@@ -10,6 +10,5 @@ export interface PokemonResponseInterface {
     next: string;
     pages: number;
     prev: string;
-    
     results: PokemonInterface[];
 }

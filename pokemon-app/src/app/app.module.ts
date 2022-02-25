@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { RequestService } from './pokemon-list/services/request.service';
 import { PokemonHomeComponent } from './pokemon-home/pokemon-home.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
@@ -46,7 +47,7 @@ import { PokemonListedComponent } from './pokemon-list/pokemon-listed/pokemon-li
       }
   })
   ],
-  providers: [],
+  providers: [RequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

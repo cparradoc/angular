@@ -22,15 +22,17 @@ export class PokemonListComponent implements OnInit {
     subscribe( async (data: PokemonResponseInterface) => {
       const results: PokemonInterface[] = data.results;
       let pokemon = [];
-      for(let pokeIterable in results) {
+      for(let pokeIterable of results) {
         let id = pokeIterable['url'].split('/');
-        await pokemon.push(await fetch(pokemon['url']).then(async response => response.json())
-        .then(async data => {
-          return { id: Number(id[id.length - 2]),
-                  name: pokemon['name'],
-                  url: pokemon['url'],
-                  image: data['sprites']['front_default']};
-        }))
+        pokemon.push(await fetch(pokeIterable['url']).then(async (response) => response.json())
+          .then(async (data) => {
+            return {
+              id: Number(id[id.length - 2]),
+              name: pokeIterable['name'],
+              url: pokeIterable['url'],
+              image: data['sprites']['front_default']
+            };
+          }))
       }
       this.pokemonList = pokemon;
       this.pokemonFilteredList = this.pokemonList;
@@ -38,34 +40,38 @@ export class PokemonListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    callRequestService(this.baseURL+'25');
+    callRequestService(this, this.baseURL+'25');
   }
 
   onChangeFilter(filter: string) {
     const newList: PokemonInterface[] = this.pokemonList.filter(
       pokemon => pokemon.name.toLowerCase().includes(filter.trim().toLowerCase()));
+      console.log(newList);
     this.pokemonFilteredList = newList;
   }
 
 }
 
-function callRequestService(url: string) {
+function callRequestService(context, url: string) {
   //getCharacters oara guardar los resultados
-  this.RequestService.getCharacters(url).subscribe( async (data: PokemonResponseInterface) => {
+  context.RequestService.getCharacters(url).subscribe( async (data: PokemonResponseInterface) => {
     const results: PokemonInterface[] = data.results;
     let pokemon = [];
-      for(let pokeIterable in results) {
+      for(let pokeIterable of results) {
         let id = pokeIterable['url'].split('/');
-        await pokemon.push(await fetch(pokemon['url']).then(async response => response.json())
-        .then(async data => {
-          return { id: Number(id[id.length - 2]),
-                  name: pokemon['name'],
-                  url: pokemon['url'],
-                  image: data['sprites']['front_default']};
-        }))
+        pokemon.push(await fetch(pokeIterable['url']).then(async (response) => response.json())
+          .then(async (data) => {
+            return {
+              id: Number(id[id.length - 2]),
+              name: pokeIterable['name'],
+              url: pokeIterable['url'],
+              image: data['sprites']['front_default']
+            };
+          }))
       }
-      this.PokemonResponseInterface = data;
-      this.PokemonResponseInterface.results = pokemon;
+      context.PokemonResponseInterface = data;
+      context.PokemonResponseInterface.results = pokemon;
+      console.log(pokemon);
   });
 
 }
