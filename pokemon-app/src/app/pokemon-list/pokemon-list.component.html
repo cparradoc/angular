@@ -1,4 +1,16 @@
 <div class="list">
     <h1>Buscar Pokémon</h1>
     <input type="text" [(ngModel)]="filter" (ngModelChange)="onChangeFilter($event)" />
+
+    <div *ngIf="filter">
+      <div *ngIf="pokemonFilteredList">
+        <h1>Lista de Pokémon</h1>
+      </div>
+    </div>
+
+    <div *ngIf="!filter">
+      <div *ngIf="PokemonResponseInterface.results">
+        <h1>Lista de Pokémon</h1>
+      </div>
+    </div>
   </div>
