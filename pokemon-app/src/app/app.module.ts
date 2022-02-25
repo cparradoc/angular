@@ -21,7 +21,7 @@ import { PokemonHomeListComponent } from './pokemon-home/pokemon-home-list/pokem
 import { PokemonListedComponent } from './pokemon-list/pokemon-listed/pokemon-listed.component';
 import { PokemonDetailImagesComponent } from './pokemon-detail/pokemon-detail-images/pokemon-detail-images.component';
 import { PokemonDetailTypesComponent } from './pokemon-detail/pokemon-detail-types/pokemon-detail-types.component';
-import { PokemonDetailFaceComponent } from './pokemon-detail/pokemon-detail-face/pokemon-detail-face.component';
+import { PokemonDetailMainComponent } from './pokemon-detail/pokemon-detail-main/pokemon-detail-main.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,7 @@ import { PokemonDetailFaceComponent } from './pokemon-detail/pokemon-detail-face
     PokemonListedComponent,
     PokemonDetailImagesComponent,
     PokemonDetailTypesComponent,
-    PokemonDetailFaceComponent
+    PokemonDetailMainComponent
   ],
   imports: [
     BrowserModule,
