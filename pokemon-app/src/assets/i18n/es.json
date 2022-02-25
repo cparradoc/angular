@@ -1,6 +1,8 @@
 {
     "header": {
-        "list": "Lista"
+        "list": "Lista oficial",
+        "created": "Mis creaciones",
+        "mix": "Lista oficial + creaciones"
     },
     "home": {
         "title": "Página principal de la Pokédex",
