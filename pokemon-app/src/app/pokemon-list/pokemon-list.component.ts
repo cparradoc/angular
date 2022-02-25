@@ -46,7 +46,6 @@ export class PokemonListComponent implements OnInit {
   onChangeFilter(filter: string) {
     const newList: PokemonInterface[] = this.pokemonList.filter(
       pokemon => pokemon.name.toLowerCase().includes(filter.trim().toLowerCase()));
-      console.log(newList);
     this.pokemonFilteredList = newList;
   }
 
@@ -71,7 +70,6 @@ function callRequestService(context, url: string) {
       }
       context.PokemonResponseInterface = data;
       context.PokemonResponseInterface.results = pokemon;
-      console.log(pokemon);
   });
 
 }
