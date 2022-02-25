@@ -45,11 +45,25 @@ export class PokemonCreatedFormComponent implements OnInit {
         frontImage: this.userRegisterForm.get('frontImage').value,
         backImage: this.userRegisterForm.get('backImage').value,
         types: types
-      }
-    }
+      };
 
-    this.userRegisterForm.reset();
-    this.submitted = false;
+      fetch("http://localhost:3000/pokemon", {
+        method: 'POST',
+				mode: 'cors',
+				cache: 'no-cache',
+				credentials: 'same-origin',
+				headers: {
+				'Content-Type': 'application/json'
+      },
+      redirect: 'follow',
+				referrerPolicy: 'no-referrer', 
+				body: JSON.stringify(pokemon) 
+      
+    });
+  }
+
+  this.userRegisterForm.reset();
+  this.submitted = false;
   }
 
 }
