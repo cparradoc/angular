@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PokemonHomeInfoComponent } from './pokemon-home/pokemon-home-info/pokemon-home-info.component';
 import { PokemonHomeWebinfoComponent } from './pokemon-home/pokemon-home-webinfo/pokemon-home-webinfo.component';
 import { PokemonHomeListComponent } from './pokemon-home/pokemon-home-list/pokemon-home-list.component';
+import { PokemonListedComponent } from './pokemon-list/pokemon-listed/pokemon-listed.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PokemonHomeListComponent } from './pokemon-home/pokemon-home-list/pokem
     FooterComponent,
     PokemonHomeInfoComponent,
     PokemonHomeWebinfoComponent,
-    PokemonHomeListComponent
+    PokemonHomeListComponent,
+    PokemonListedComponent
   ],
   imports: [
     BrowserModule,
