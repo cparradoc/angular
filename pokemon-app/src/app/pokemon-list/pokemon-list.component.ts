@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PokemonInterface, PokemonResponseInterface } from './models/pokemon.interface';
-import { RequestService } from './services/request.service';
+import { RequestService } from '../services/request.service';
 
 @Component({
   selector: 'app-pokemon-list',

@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { RequestService } from './pokemon-list/services/request.service';
+import { RequestService } from './services/request.service';
 import { PokemonHomeComponent } from './pokemon-home/pokemon-home.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
@@ -19,6 +19,9 @@ import { PokemonHomeInfoComponent } from './pokemon-home/pokemon-home-info/pokem
 import { PokemonHomeWebinfoComponent } from './pokemon-home/pokemon-home-webinfo/pokemon-home-webinfo.component';
 import { PokemonHomeListComponent } from './pokemon-home/pokemon-home-list/pokemon-home-list.component';
 import { PokemonListedComponent } from './pokemon-list/pokemon-listed/pokemon-listed.component';
+import { PokemonDetailImagesComponent } from './pokemon-detail/pokemon-detail-images/pokemon-detail-images.component';
+import { PokemonDetailTypesComponent } from './pokemon-detail/pokemon-detail-types/pokemon-detail-types.component';
+import { PokemonDetailFaceComponent } from './pokemon-detail/pokemon-detail-face/pokemon-detail-face.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { PokemonListedComponent } from './pokemon-list/pokemon-listed/pokemon-li
     PokemonHomeInfoComponent,
     PokemonHomeWebinfoComponent,
     PokemonHomeListComponent,
-    PokemonListedComponent
+    PokemonListedComponent,
+    PokemonDetailImagesComponent,
+    PokemonDetailTypesComponent,
+    PokemonDetailFaceComponent
   ],
   imports: [
     BrowserModule,
