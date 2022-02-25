@@ -1,10 +1,10 @@
 <div class="list">
-    <h1>Buscar Pokémon</h1>
+    <h1 translate>list.search</h1>
     <input type="text" [(ngModel)]="filter" (ngModelChange)="onChangeFilter($event)" />
 
     <div *ngIf="filter">
       <div *ngIf="pokemonFilteredList">
-        <h1>Lista de Pokémon</h1>
+        <h1 translate>list.pokemon-list</h1>
         <div *ngFor="let pokemon of pokemonFilteredList">
           <app-pokemon-listed [pokemonParent]="pokemon"></app-pokemon-listed>
         </div>
@@ -13,7 +13,7 @@
 
     <div *ngIf="!filter">
       <div *ngIf="PokemonResponseInterface.results">
-        <h1>Lista de Pokémon</h1>
+        <h1 translate>list.pokemon-list</h1>
         <div *ngFor="let pokemon of PokemonResponseInterface.results">
           <app-pokemon-listed [pokemonParent]="pokemon"></app-pokemon-listed>
         </div>

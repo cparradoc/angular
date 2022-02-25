@@ -16,6 +16,10 @@
             "second": "There are two types of Pokémon list."
         }
     },
+    "list": {
+        "search": "Pokémon search",
+        "pokemon-list": "Pokémon list"
+    },
     "footer": {
         "about-us": "About us"
     }
