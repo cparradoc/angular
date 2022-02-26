@@ -1,9 +1,31 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
-  }
+  "pokemon": [
+    { "name": "rockruff",
+      "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
+      "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/744.png",
+      "types": {
+        "firstType": "roca"
+      },
+      "id": "744"
+    },
+    {
+      "name": "lycanroc",
+      "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png",
+      "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/745.png",
+      "types": {
+        "firstType": "roca"
+      },
+      "id": "745"
+    },
+    {
+      "name": "togedemaru",
+      "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/777.png",
+      "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/777.png",
+      "types": {
+        "firstType": "electrico",
+        "secondType": "acero"
+      },
+      "id": "777"
+    }
+  ]
+}
