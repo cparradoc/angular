@@ -4,7 +4,7 @@
       "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
       "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/744.png",
       "types": {
-        "firstType": "roca"
+        "firstType": "rock"
       },
       "id": "744"
     },
@@ -13,7 +13,7 @@
       "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png",
       "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/745.png",
       "types": {
-        "firstType": "roca"
+        "firstType": "rock"
       },
       "id": "745"
     },
@@ -22,8 +22,8 @@
       "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/777.png",
       "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/777.png",
       "types": {
-        "firstType": "electrico",
-        "secondType": "acero"
+        "firstType": "electric",
+        "secondType": "steel"
       },
       "id": "777"
     }
