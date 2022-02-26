@@ -12,6 +12,10 @@ export class PokemonCreatedFormComponent implements OnInit {
 
   public userRegisterForm: FormGroup = null;
   public submitted: boolean = false;
+
+  firstTypeList: string[] = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'ground', 'flying', 'ghost', 'rock', 'fighting', 'poison', 'psychic', 'bug', 'dark', 'steel', 'dragon', 'fairy'];
+	secondTypeList: string[] = ['', 'normal', 'fire', 'water', 'electric', 'grass', 'ice', 'ground', 'flying', 'ghost', 'rock', 'fighting', 'poison', 'psychic', 'bug', 'dark', 'steel', 'dragon', 'fairy'];
+
   
   constructor(private formBuilder: FormBuilder) { 
     // Podemos meter valores por defecto en las comillas
