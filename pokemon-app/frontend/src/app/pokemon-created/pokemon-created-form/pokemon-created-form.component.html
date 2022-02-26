@@ -1,1 +1,15 @@
-<p>pokemon-created-form works!</p>
+<h2>Crear nuevo Pokémon:</h2>
+
+<form novalidate (ngSubmit)="onSubmit()" [formGroup]="userRegisterForm">
+    <fieldset>
+        <label for="name">Nombre del Pokémon:</label>
+        <input type="text" id="name" formControlName="name" />
+        <div *ngIf="!userRegisterForm.get('name').valid &&
+        (userRegisterForm.get('name').dirty || submitted)">
+        Nombre no válido
+        </div>
+    </fieldset>
+
+
+
+</form>
