@@ -12,7 +12,7 @@ export function compareType (controlName: string, matchingControlName: string){
       return;
     }
     // Setter Errores
-    if (control.value !== matchingControl.value) {
+    if (control.value === matchingControl.value) {
       matchingControl.setErrors({ mustMatch: true });
     } else {
       matchingControl.setErrors(null);
