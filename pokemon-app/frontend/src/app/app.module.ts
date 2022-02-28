@@ -24,6 +24,7 @@ import { PokemonDetailTypesComponent } from './pokemon-detail/pokemon-detail-typ
 import { PokemonDetailMainComponent } from './pokemon-detail/pokemon-detail-main/pokemon-detail-main.component';
 import { PokemonCreatedComponent } from './pokemon-created/pokemon-created.component';
 import { PokemonCreatedFormComponent } from './pokemon-created/pokemon-created-form/pokemon-created-form.component';
+import { PokemonCreatedListComponent } from './pokemon-created/pokemon-created-list/pokemon-created-list.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { PokemonCreatedFormComponent } from './pokemon-created/pokemon-created-f
     PokemonDetailTypesComponent,
     PokemonDetailMainComponent,
     PokemonCreatedComponent,
-    PokemonCreatedFormComponent
+    PokemonCreatedFormComponent,
+    PokemonCreatedListComponent
   ],
   imports: [
     BrowserModule,
