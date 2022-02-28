@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PokemonCreatedInterface } from '../models/pokemon.created.interface';
 import { compareType } from '../pokemon-created-form/custom-validator';
-import { ActivatedRoute, Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
@@ -12,7 +12,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class PokemonCreatedDetailComponent implements OnInit {
 
   id: string;
-  types: string[] = [];
+  types: string[] = [''];
   pokemon: PokemonCreatedInterface;
 
   firstTypeList: string[] = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'ground', 'flying', 'ghost', 'rock', 'fighting', 'poison', 'psychic', 'bug', 'dark', 'steel', 'dragon', 'fairy'];
@@ -38,15 +38,18 @@ export class PokemonCreatedDetailComponent implements OnInit {
    ngOnInit() {
     this.route.paramMap.subscribe( params => {
       this.id = params.get('id');
-      fetch('https://localhost:3000/pokemon-created/' + this.id)
-      .then ( response => response.json())
+      console.log(this.id);
+      fetch('http://localhost:3000/pokemon-created/' + this.id)
+      .then (response => response.json())
       .then (data => {
-        for(let pokemonType of data.types) {
-          this.types.push(pokemonType.type.name);
+        console.log(data);
+        for(let pokemonType in data.types) {
+          this.types.push(pokemonType);
         }
         this.pokemon = 
-        {id: this.id, name: data.name, frontImage: data.sprites.front_default,
-           backImage: data.sprites.back_default, types: this.types}
+        {
+          id: this.id, name: data.name, frontImage: data.frontImage,
+           backImage: data.backImage, types: this.types};
       });
     });
   }
