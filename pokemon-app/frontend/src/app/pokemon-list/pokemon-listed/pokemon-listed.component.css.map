@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,AAAA,KAAK,CAAC;EACH,eAAe,EAAE,IAAI;CAKxB;;AAND,AAGI,CAHH,AAAA,KAAK,CAGA,EAAE,CAAC;EACD,KAAK,EAAE,KAAK;CACf",
+    "mappings": "AAAA,AAAA,CAAC,AAAA,KAAK,CAAC;EACH,eAAe,EAAE,IAAI;CACxB;;AAED,AAAA,EAAE,CAAC;EACC,KAAK,EAAE,KAAK;CACf",
     "sources": [
         "pokemon-listed.component.scss"
     ],
