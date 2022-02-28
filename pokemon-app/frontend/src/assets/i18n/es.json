@@ -25,6 +25,20 @@
     "footer": {
         "about-us": "Sobre nosotros"
     },
+    "form": {
+        "title": "Crear nuevo Pokémon:",
+        "name": "Nombre del Pokémon:",
+        "front-url": "URL de la imagen frontal del Pokémon:",
+        "back-url": "URL de la imagen trasera del Pokémon:",
+        "first-type": "Primer tipo del Pokémon:",
+        "second-type": "Segundo tipo del Pokémon:",
+        "error": {
+            "name": "Nombre no válido.",
+            "url": "URL de imágen no válida.",
+            "first-type": "Tipo no válido.",
+            "second-type": "Tipo no válido distinto al primero."
+        }
+    },
     "about-us": {
         "title": "Sobre nosotros",
         "why": {

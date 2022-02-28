@@ -25,6 +25,20 @@
     "footer": {
         "about-us": "About us"
     },
+    "form": {
+        "title": "Create new Pokémon:",
+        "name": "Pokémon's name:",
+        "front-url": "Pokémon's front image URL:",
+        "back-url": "Pokémon's back image URL:",
+        "first-type": "Pokémon's first type:",
+        "second-type": "Pokémon's second type:",
+        "error": {
+            "name": "Invalid name.",
+            "url": "Invalid URL.",
+            "first-type": "Invalid type.",
+            "second-type": "Invalid type, has to be different that the first one."
+        }
+    },
     "about-us": {
         "title": "About us",
         "why": {

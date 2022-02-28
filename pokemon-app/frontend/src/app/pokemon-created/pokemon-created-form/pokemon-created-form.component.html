@@ -1,52 +1,52 @@
-<h2>Crear nuevo Pokémon:</h2>
+<h2 translate>form.title</h2>
 
 <form novalidate (ngSubmit)="onSubmit()" [formGroup]="userRegisterForm">
     <fieldset>
-        <label for="name">Nombre del Pokémon:</label>
+        <label for="name" translate>form.name</label>
         <input type="text" id="name" formControlName="name" />
         <div *ngIf="!userRegisterForm.get('name').valid &&
-        (userRegisterForm.get('name').dirty || submitted)">
-        Nombre no válido.
+        (userRegisterForm.get('name').dirty || submitted)" translate>
+        form.error.name
         </div>
     </fieldset>
     
     <fieldset>
-        <label for="frontImage">URL de la imagen frontal del Pokémon:</label>
+        <label for="frontImage" translate>form.front-url</label>
         <input type="text" id="frontImage" formControlName="frontImage" />
         <div *ngIf="!userRegisterForm.get('frontImage').valid &&
-        (userRegisterForm.get('frontImage').dirty || submitted)">
-        Url de imágen no válida.
+        (userRegisterForm.get('frontImage').dirty || submitted)" translate>
+        form.error.url
         </div>
     </fieldset>
 
     <fieldset>
-        <label for="backImage">URL de la imagen trasera del Pokémon:</label>
+        <label for="backImage" translate>form.back-url</label>
         <input type="text" id="backImage" formControlName="backImage" />
         <div *ngIf="!userRegisterForm.get('backImage').valid &&
-        (userRegisterForm.get('backImage').dirty || submitted)">
-        Url de imágen no válida.
+        (userRegisterForm.get('backImage').dirty || submitted)" translate>
+        form.error.url
         </div>
     </fieldset>
 
     <fieldset>
-        <label for="firstType">Primer tipo del Pokémon:</label>
+        <label for="firstType" translate>form.first-type</label>
         <select name="firstType" formControlName="firstType">
             <option [value]="type" *ngFor="let type of firstTypeList">{{type}}</option>
         </select>
         <div *ngIf="!userRegisterForm.get('firstType').valid &&
-        (userRegisterForm.get('firstType').dirty || submitted)">
-        Tipo no válido.
+        (userRegisterForm.get('firstType').dirty || submitted)" translate>
+        form.error.first-type
         </div>
     </fieldset>
 
     <fieldset>
-        <label for="secondType">Segundo tipo del Pokémon:</label>
+        <label for="secondType" translate>form.second-type</label>
         <select name="secondType" formControlName="secondType">
             <option [value]="type" *ngFor="let type of secondTypeList">{{type}}</option>
         </select>
         <div *ngIf="!userRegisterForm.get('secondType').valid &&
-        (userRegisterForm.get('firstType').dirty || submitted)">
-        Tipo no válido distinto al primero.
+        (userRegisterForm.get('firstType').dirty || submitted)" translate>
+        form.error.second-type
         </div>
     </fieldset>
 
