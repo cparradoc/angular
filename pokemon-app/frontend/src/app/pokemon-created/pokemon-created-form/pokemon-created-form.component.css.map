@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,YAAY,EAAE,MAAM;CACvB",
     "sources": [
         "pokemon-created-form.component.scss"
     ],

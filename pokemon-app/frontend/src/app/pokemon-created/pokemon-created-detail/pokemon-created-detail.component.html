@@ -15,16 +15,16 @@
 
 <div>
     <form novalidate (ngSubmit)="onSubmit()" [formGroup]="userRegisterForm">
-        <fieldset>
-            <label for="name" translate>form.name</label>
-            <input type="text" id="name" formControlName="name"/>
+        <fieldset class="pokemon-created">
+            <label for="name" translate>form.name </label>
+            <input  type="text" id="name" formControlName="name"/>
             <div *ngIf="!userRegisterForm.get('name').valid &&
                   (userRegisterForm.get('name').dirty || submitted)" translate>
                 form.error.name
             </div>
         </fieldset>
-        <fieldset>
-            <label for="frontImage" translate>form.front-url</label>
+        <fieldset class="pokemon-created">
+            <label for="frontImage" translate>form.front-url </label>
             <input type="text" id="frontImage" formControlName="frontImage" />
                 <!-- Si el campo frontImage es invalido / ha sido tocado / submitted = true -->
             <div *ngIf="!userRegisterForm.get('frontImage').valid &&
@@ -33,8 +33,8 @@
             </div>
         </fieldset>	
 
-        <fieldset>
-            <label for="backImage" translate>form.back-url</label>
+        <fieldset class="pokemon-created">
+            <label for="backImage" translate>form.back-url </label>
             <input type="text" id="backImage" formControlName="backImage" />
                 <!-- Si el campo backImage es invalido / ha sido tocado / submitted = true -->
             <div *ngIf="!userRegisterForm.get('backImage').valid &&
@@ -43,8 +43,8 @@
             </div>
         </fieldset>	
 
-        <fieldset>
-            <label for="firstType" translate>form.first-type</label>
+        <fieldset class="pokemon-created">
+            <label for="firstType" translate>form.first-type </label>
             <select name="firstType" formControlName="firstType">
                 <option [value]="type" *ngFor="let type of firstTypeList">{{type}}</option>
             </select>
@@ -54,8 +54,8 @@
             </div>
         </fieldset>
 
-        <fieldset>
-            <label for="secondType" translate>form.second-type</label>
+        <fieldset class="pokemon-created">
+            <label for="secondType" translate>form.second-type </label>
             <select name="secondType" formControlName="secondType">
                 <option [value]="type" *ngFor="let type of secondTypeList">{{type}}</option>
             </select>
