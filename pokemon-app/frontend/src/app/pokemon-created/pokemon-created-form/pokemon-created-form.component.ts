@@ -35,6 +35,8 @@ export class PokemonCreatedFormComponent implements OnInit {
 
   public onSubmit(): void {
     this.submitted = true;
+    let idPokemon = (Math.floor(Math.random() * (900 - 800) + 800)).toString();
+  
 
     if(this.userRegisterForm.valid) {
       let types: string[] = [];
@@ -44,7 +46,7 @@ export class PokemonCreatedFormComponent implements OnInit {
         types.push(secondType);
       }
       const pokemon : PokemonCreatedInterface = {
-        id: '',
+        id: idPokemon,
         name: this.userRegisterForm.get('name').value,
         frontImage: this.userRegisterForm.get('frontImage').value,
         backImage: this.userRegisterForm.get('backImage').value,
