@@ -16,4 +16,12 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.list a:link {
+  text-decoration: none;
+}
+
+.list h4 {
+  color: black;
+}
 /*# sourceMappingURL=pokemon-mix.component.css.map */
