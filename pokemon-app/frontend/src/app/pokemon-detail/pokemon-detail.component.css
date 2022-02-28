@@ -1,4 +1,12 @@
 .detail {
   text-align: center;
 }
+
+.detail a:link {
+  text-decoration: none;
+}
+
+.detail h2 {
+  color: black;
+}
 /*# sourceMappingURL=pokemon-detail.component.css.map */
