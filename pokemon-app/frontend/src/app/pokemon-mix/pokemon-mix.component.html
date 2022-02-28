@@ -1,20 +1,22 @@
-<div>
-    <div *ngFor="let pokemon of pokemonList">
+<div class="list">
+    <div class=list-content>
+    <div  *ngFor="let pokemon of pokemonList">
         <div *ngIf="pokemon.url">
             <a [routerLink]="['/pokemon/' + pokemon.id]">
                 <div>
-                    <h4>{{ pokemon.name }}</h4>
+                    <h4>{{pokemon.id}}. {{pokemon.name}}</h4>
                     <img [src]="pokemon.image" [alt]="pokemon.name">
                 </div>
             </a>
         </div>
-        <div *ngIf="!pokemon.url">
+        <div  class=list-content *ngIf="!pokemon.url">
             <a [routerLink]="['/pokemon-created/' + pokemon.id]">
                 <div>
-                    <h4>{{ pokemon.name }}</h4>
+                    <h4>{{pokemon.id}}. {{pokemon.name}}</h4>
                     <img [src]="pokemon.image" [alt]="pokemon.name">
                 </div>
             </a>
         </div>
+    </div>
     </div>
 </div>

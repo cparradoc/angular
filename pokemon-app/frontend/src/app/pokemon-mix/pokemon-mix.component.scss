@@ -1,0 +1,12 @@
+.list {
+    & h1 {
+        text-align: center;
+    }
+
+    .list-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
