@@ -26,6 +26,7 @@ import { PokemonCreatedComponent } from './pokemon-created/pokemon-created.compo
 import { PokemonCreatedFormComponent } from './pokemon-created/pokemon-created-form/pokemon-created-form.component';
 import { PokemonCreatedListComponent } from './pokemon-created/pokemon-created-list/pokemon-created-list.component';
 import { PokemonCreatedDetailComponent } from './pokemon-created/pokemon-created-detail/pokemon-created-detail.component';
+import { PokemonMixComponent } from './pokemon-mix/pokemon-mix.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PokemonCreatedDetailComponent } from './pokemon-created/pokemon-created
     PokemonCreatedComponent,
     PokemonCreatedFormComponent,
     PokemonCreatedListComponent,
-    PokemonCreatedDetailComponent
+    PokemonCreatedDetailComponent,
+    PokemonMixComponent
   ],
   imports: [
     BrowserModule,
