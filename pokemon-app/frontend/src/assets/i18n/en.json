@@ -36,7 +36,7 @@
             "name": "Invalid name.",
             "url": "Invalid URL.",
             "first-type": "Invalid type.",
-            "second-type": "Invalid type, has to be different that the first one."
+            "second-type": "Invalid type, has to be different from the first one."
         }
     },
     "about-us": {
