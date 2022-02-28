@@ -29,7 +29,7 @@
         "title": "Sobre nosotros",
         "why": {
             "title": "¿Por qué hemos hecho este proyecto?",
-            "text": "Este proyecto surge de la formación en distintas tecnologías para el desarrollo de frontend y, men este caso, del desarrollo web en Angular. Particularmente se ha utilizado la temática de una Pokédex, ya que nos sentimos cómodos con la temática de Pokémon y era una API con datos con los que ya estábamos familiarizados"
+            "text": "Este proyecto surge de la formación en distintas tecnologías para el desarrollo de frontend y, men este caso, del desarrollo web en Angular. Particularmente se ha utilizado la temática de una Pokédex, ya que nos sentimos cómodos con la temática de Pokémon y era una API con datos con los que ya estábamos familiarizados."
         },
         "us": {
             "title": "¿Quiénes somos?",

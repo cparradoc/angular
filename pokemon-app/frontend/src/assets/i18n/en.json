@@ -24,5 +24,24 @@
     },
     "footer": {
         "about-us": "About us"
+    },
+    "about-us": {
+        "title": "About us",
+        "why": {
+            "title": "Why have we done this project?",
+            "text": "This project arises from training in different technologies for frontend development and, in this case, web development in Angular. In particular, the theme of a Pokédex has been used, since we felt comfortable with the theme of Pokémon and it was an API with data that we were already familiar with."
+        },
+        "us": {
+            "title": "Who are we?",
+            "text": "We are one man army...ME, Carlos Parrado. I leave you here my gitlab: http://gitlab.indra/cparradoc ."
+        },
+        "thanks": {
+            "title": "Aknowledgments",
+            "text": "Thanks to my mentors and supervisors in this task, Jaime and Samuel, above all for their patience in the face of my slowness and for explaining my doubts so clearly."
+        },
+        "nonsense": {
+            "title": "Did you know that...",
+            "text": "Pokémon exist, they just suffer from chronic migraines so they don't show themselves normally due to their constant discomfort."
+        }
     }
 }
