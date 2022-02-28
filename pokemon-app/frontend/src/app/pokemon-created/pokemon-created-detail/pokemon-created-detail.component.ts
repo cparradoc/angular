@@ -54,6 +54,41 @@ export class PokemonCreatedDetailComponent implements OnInit {
     });
   }
 
+  public async onSubmit(): Promise<void> {
+
+    this.submitted = true;
+
+    if (this.userRegisterForm.valid) {
+      let types: string[] = [];
+      types.push(this.userRegisterForm.get('firstType').value);
+      let type2 = this.userRegisterForm.get('secondType').value;
+      if (type2 != '') {
+        types.push(type2);}
+      const pokemon: PokemonCreatedInterface = {
+        id: '',
+        name: this.userRegisterForm.get('name').value,
+        frontImage: this.userRegisterForm.get('frontImage').value,
+        backImage: this.userRegisterForm.get('backImage').value,
+        types: types,
+      };
+      await fetch("http://localhost:3000/pokemon-created/"+this.id, {
+        method: 'PATCH',
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers: {
+        'Content-Type': 'application/json'
+        },
+        redirect: 'follow',
+        referrerPolicy: 'no-referrer', 
+        body: JSON.stringify(pokemon) 
+      });
+    }
+    this.userRegisterForm.reset();
+    this.submitted = false;
+    location.reload();
+  }
+
   deletePokemon(){
     fetch('http://localhost:3000/pokemon-created/' + this.id, 
     {method: 'DELETE'});
