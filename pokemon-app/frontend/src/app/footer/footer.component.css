@@ -38,4 +38,13 @@
     height: 31px;
   }
 }
+
+.footer p {
+  color: black;
+  margin-top: 20%;
+}
+
+.footer a:link {
+  text-decoration: none;
+}
 /*# sourceMappingURL=footer.component.css.map */
