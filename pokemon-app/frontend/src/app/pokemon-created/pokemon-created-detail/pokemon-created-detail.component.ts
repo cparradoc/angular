@@ -38,11 +38,9 @@ export class PokemonCreatedDetailComponent implements OnInit {
    ngOnInit() {
     this.route.paramMap.subscribe( params => {
       this.id = params.get('id');
-      console.log(this.id);
       fetch('http://localhost:3000/pokemon-created/' + this.id)
       .then (response => response.json())
       .then (data => {
-        console.log(data);
         for(let pokemonType in data.types) {
           this.types.push(pokemonType);
         }

@@ -6,4 +6,10 @@
         <img src={{pokemon.backImage}}>
     </div>
 
+    <div>
+        <div *ngFor="let pokemonType of pokemon.types">
+            <h3 *ngIf="pokemonType" [ngClass]="'detail-type detail-type-'+pokemonType">{{pokemonType}}</h3>
+        </div>
+    </div>
+
 </div>

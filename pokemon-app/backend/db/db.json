@@ -27,6 +27,26 @@
         "secondType": "steel"
       },
       "id": "777"
+    },
+    {
+      "id": "872",
+      "name": "a",
+      "frontImage": "a",
+      "backImage": "a",
+      "types": [
+        "fire",
+        "water"
+      ]
+    },
+    {
+      "id": "898",
+      "name": "r",
+      "frontImage": "rr",
+      "backImage": "r",
+      "types": [
+        "fire",
+        "normal"
+      ]
     }
   ]
 }
