@@ -38,7 +38,7 @@ export class PokemonCreatedDetailComponent implements OnInit {
    ngOnInit() {
     this.route.paramMap.subscribe( params => {
       this.id = params.get('id');
-      fetch('https://localhost:3000/pokemon/' + this.id)
+      fetch('https://localhost:3000/pokemon-created/' + this.id)
       .then ( response => response.json())
       .then (data => {
         for(let pokemonType of data.types) {
@@ -52,7 +52,7 @@ export class PokemonCreatedDetailComponent implements OnInit {
   }
 
   deletePokemon(){
-    fetch('http://localhost:3000/pokemon/' + this.id, 
+    fetch('http://localhost:3000/pokemon-created/' + this.id, 
     {method: 'DELETE'});
     this.router.navigate(['created-pokemon']);
   }

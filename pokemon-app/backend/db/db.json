@@ -1,5 +1,5 @@
 {
-  "pokemon": [
+  "pokemon-created": [
     {
       "name": "rockruff",
       "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
@@ -27,6 +27,15 @@
         "secondType": "steel"
       },
       "id": "777"
+    },
+    {
+      "id": "846",
+      "name": "a",
+      "frontImage": "a",
+      "backImage": "a",
+      "types": [
+        "fire"
+      ]
     }
   ]
 }

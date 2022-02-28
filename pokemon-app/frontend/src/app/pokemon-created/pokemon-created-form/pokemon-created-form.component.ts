@@ -53,7 +53,7 @@ export class PokemonCreatedFormComponent implements OnInit {
         types: types
       };
 
-      fetch("http://localhost:3000/pokemon", {
+      fetch("http://localhost:3000/pokemon-created", {
         method: 'POST',
 				mode: 'cors',
 				cache: 'no-cache',

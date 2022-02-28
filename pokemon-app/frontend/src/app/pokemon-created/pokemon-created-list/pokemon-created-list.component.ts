@@ -13,7 +13,7 @@ export class PokemonCreatedListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    fetch("http://localhost:3000/pokemon")
+    fetch("http://localhost:3000/pokemon-created")
     .then(async response => response.json())
     .then(async data => {
       let pokemon: PokemonCreatedInterface;
