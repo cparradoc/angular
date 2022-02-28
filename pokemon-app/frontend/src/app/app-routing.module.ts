@@ -6,6 +6,7 @@ import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.componen
 import { PokemonHomeComponent } from './pokemon-home/pokemon-home.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonMixComponent } from './pokemon-mix/pokemon-mix.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {path: "", component: PokemonHomeComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: "pokemon/:id", component: PokemonDetailComponent},
   {path: "pokemon-created", component: PokemonCreatedComponent},
   {path: "pokemon-created/:id", component: PokemonCreatedDetailComponent},
-  {path: "pokemon-mix", component: PokemonMixComponent}
+  {path: "pokemon-mix", component: PokemonMixComponent},
+  {path: "about", component: AboutComponent}
 
 ];
 
