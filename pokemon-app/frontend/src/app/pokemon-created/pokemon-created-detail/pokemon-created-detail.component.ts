@@ -41,9 +41,11 @@ export class PokemonCreatedDetailComponent implements OnInit {
       fetch('http://localhost:3000/pokemon-created/' + this.id)
       .then (response => response.json())
       .then (data => {
-        for(let pokemonType in data.types) {
-          this.types.push(pokemonType);
+        this.types.push(data.types.firstType);
+        if(data.types.secondType) {
+          this.types.push(data.types.secondType);
         }
+        
         this.pokemon = 
         {
           id: this.id, name: data.name, frontImage: data.frontImage,
