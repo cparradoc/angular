@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewContainerRef, TemplateRef } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PokemonCreatedInterface } from '../models/pokemon.created.interface';
 import { compareType } from './custom-validator';
@@ -37,7 +37,7 @@ export class PokemonCreatedFormComponent implements OnInit {
     this.submitted = true;
 
     if(this.userRegisterForm.valid) {
-      let types: string[];
+      let types: string[] = [];
       types.push(this.userRegisterForm.get('firstType').value);
       let secondType = this.userRegisterForm.get('secondType').value;
       if(secondType) { //caso en el que el pokemon tenga dos tipos
@@ -68,6 +68,22 @@ export class PokemonCreatedFormComponent implements OnInit {
 
   this.userRegisterForm.reset();
   this.submitted = false;
+  this.removeChild(); 
+  this.addChild();
   }
+
+  @ViewChild('vc', { read: ViewContainerRef }) vc: ViewContainerRef;
+	@ViewChild('tpl', { read: TemplateRef }) tpl: TemplateRef<any>;
+
+  addChild(){
+		let view = this.tpl.createEmbeddedView(null);
+		this.vc.insert(view);
+	}
+
+  removeChild(){
+		if (document.getElementsByClassName("firstView")[0])
+			document.getElementsByClassName("firstView")[0].innerHTML= '';
+		this.vc.clear();
+	}
 
 }

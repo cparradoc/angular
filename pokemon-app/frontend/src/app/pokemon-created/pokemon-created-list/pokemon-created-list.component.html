@@ -1,6 +1,6 @@
 <div>
-    <div *nFor="let pokemon of pokemonCreatedList">
-        <a">
+    <div *ngFor="let pokemon of pokemonCreatedList">
+        <a [routerLink]="['/pokemon-created/' + pokemon.id]">
             <div>
                 <h2>{{pokemon.id}}. {{pokemon.name}}</h2>
                 <img src="{{pokemon.frontImage}}">

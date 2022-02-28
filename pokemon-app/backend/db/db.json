@@ -1,6 +1,7 @@
 {
   "pokemon": [
-    { "name": "rockruff",
+    {
+      "name": "rockruff",
       "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
       "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/744.png",
       "types": {
@@ -26,6 +27,15 @@
         "secondType": "steel"
       },
       "id": "777"
+    },
+    {
+      "id": "iwG17-V",
+      "name": "a",
+      "frontImage": "a",
+      "backImage": "a",
+      "types": [
+        "dark"
+      ]
     }
   ]
 }

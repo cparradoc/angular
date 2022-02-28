@@ -49,6 +49,10 @@
     <button type="submit" [disabled]="!userRegisterForm.valid">Update</button>
 </form>
 
-<div>
+<div class="firstView">
     <app-pokemon-created-list></app-pokemon-created-list>
 </div>
+<ng-container #vc></ng-container>
+<ng-template #tpl>
+    <app-pokemon-created-list></app-pokemon-created-list>
+</ng-template>

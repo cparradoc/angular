@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PokemonCreatedInterface } from '../models/pokemon.created.interface';
 import { compareType } from '../pokemon-created-form/custom-validator';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
@@ -22,7 +22,7 @@ export class PokemonCreatedDetailComponent implements OnInit {
   public submitted: boolean = false;
 
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private route: ActivatedRoute, private formBuilder: FormBuilder, private router: Router) {
     this.userRegisterForm = this.formBuilder.group({
       name: ['', [Validators.required, Validators.maxLength(20)]],
       frontImage: ['', [Validators.required, Validators.maxLength(200)]],
@@ -35,7 +35,27 @@ export class PokemonCreatedDetailComponent implements OnInit {
     });
    }
 
-  ngOnInit(): void {
+   ngOnInit() {
+    this.route.paramMap.subscribe( params => {
+      this.id = params.get('id');
+      fetch('https://localhost:3000/pokemon/' + this.id)
+      .then ( response => response.json())
+      .then (data => {
+        for(let pokemonType of data.types) {
+          this.types.push(pokemonType.type.name);
+        }
+        this.pokemon = 
+        {id: this.id, name: data.name, frontImage: data.sprites.front_default,
+           backImage: data.sprites.back_default, types: this.types}
+      });
+    });
   }
 
+  deletePokemon(){
+    fetch('http://localhost:3000/pokemon/' + this.id, 
+    {method: 'DELETE'});
+    this.router.navigate(['created-pokemon']);
+  }
+
+  
 }
