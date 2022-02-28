@@ -18,6 +18,12 @@
       justify-content: space-around;
 }
 
+.nav-bar h2 {
+  padding-top: 40px;
+  color: black;
+  text-decoration: none;
+}
+
 .nav-bar__logo {
   height: 40px;
 }
@@ -53,9 +59,11 @@
 
 .languages .spanish img {
   height: 20px;
+  width: 30px;
 }
 
 .languages .english img {
   height: 20px;
+  width: 30px;
 }
 /*# sourceMappingURL=nav-bar.component.css.map */
