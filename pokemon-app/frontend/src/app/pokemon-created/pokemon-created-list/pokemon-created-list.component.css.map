@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "pokemon-created-list.component.scss"
+    ],
+    "names": [],
+    "file": "pokemon-created-list.component.css"
+}

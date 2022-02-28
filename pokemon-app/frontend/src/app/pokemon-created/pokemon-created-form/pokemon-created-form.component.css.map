@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "pokemon-created-form.component.scss"
+    ],
+    "names": [],
+    "file": "pokemon-created-form.component.css"
+}

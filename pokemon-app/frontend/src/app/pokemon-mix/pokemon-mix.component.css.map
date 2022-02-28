@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AACI,KADC,CACC,EAAE,CAAC;EACD,UAAU,EAAE,MAAM;CACrB;;AAHL,AAKI,KALC,CAKD,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,aAAa;CACjC",
     "sources": [
-        "pokemon-list.component.scss"
+        "pokemon-mix.component.scss"
     ],
     "names": [],
-    "file": "pokemon-list.component.css"
+    "file": "pokemon-mix.component.css"
 }

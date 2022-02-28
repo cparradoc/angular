@@ -50,4 +50,12 @@
   margin-top: 10px;
   height: 50px;
 }
+
+.languages .spanish img {
+  height: 20px;
+}
+
+.languages .english img {
+  height: 20px;
+}
 /*# sourceMappingURL=nav-bar.component.css.map */
