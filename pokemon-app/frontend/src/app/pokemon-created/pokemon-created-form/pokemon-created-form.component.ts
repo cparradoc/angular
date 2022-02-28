@@ -41,6 +41,7 @@ export class PokemonCreatedFormComponent implements OnInit {
     if(this.userRegisterForm.valid) {
       let types: string[] = [];
       types.push(this.userRegisterForm.get('firstType').value);
+      console.log(types);
       let secondType = this.userRegisterForm.get('secondType').value;
       if(secondType) { //caso en el que el pokemon tenga dos tipos
         types.push(secondType);

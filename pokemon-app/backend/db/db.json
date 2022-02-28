@@ -47,6 +47,16 @@
         "fire",
         "normal"
       ]
+    },
+    {
+      "id": "816",
+      "name": "e",
+      "frontImage": "e",
+      "backImage": "e",
+      "types": [
+        "normal",
+        "water"
+      ]
     }
   ]
 }
