@@ -16,6 +16,10 @@
             "title": "What can you finde here?",
             "first": "This web page is used exclusively for the study of Pokémon, its data being extracted via API.",
             "second": "There are two types of Pokémon list."
+        },
+        "list": {
+            "title": "Pokémon lists",
+            "content": "There is the original Pokémon list, with the 151 Pokémon from the first generation, and also a second list with those Pokémon that are added by the user."
         }
     },
     "list": {

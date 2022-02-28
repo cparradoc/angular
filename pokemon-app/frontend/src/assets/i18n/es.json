@@ -16,6 +16,10 @@
             "title": "¿Qué te puedes encontrar aquí?",
             "first": "Esta página web se utiliza exclusivamente para el estudio de los Pokémon, siendo sus datos estraídos vía API.",
             "second": "Existen dos tipos de listado de Pokémon."
+        },
+        "list": {
+            "title": "Listas Pokémon",
+            "content": "Existe la lista de Pokémon original, con los 151 Pokémon de la primera generación, y también una segunda lista con aquellos Pokémon que se añadan por parte del usuario."
         }
     },
     "list": {

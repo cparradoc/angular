@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=pokemon-home-list.component.css.map */
+.list p {
+  border-style: dashed;
+  border-color: orange;
+  border-radius: 10px;
+  border-collapse: separate;
+  padding: 20px;
+  border-width: 2px;
+  font-family: sans-serif;
+}
+/*# sourceMappingURL=pokemon-home-list.component.css.map */
