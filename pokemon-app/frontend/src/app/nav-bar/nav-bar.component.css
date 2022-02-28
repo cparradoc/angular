@@ -21,6 +21,9 @@
 .nav-bar h2 {
   padding-top: 40px;
   color: black;
+}
+
+.nav-bar a:link {
   text-decoration: none;
 }
 

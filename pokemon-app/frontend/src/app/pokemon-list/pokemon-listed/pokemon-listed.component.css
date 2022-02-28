@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=pokemon-listed.component.css.map */
+a:link {
+  text-decoration: none;
+}
+
+a:link h4 {
+  color: black;
+}
+/*# sourceMappingURL=pokemon-listed.component.css.map */
